@@ -6,6 +6,7 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using GreenThumb.WebMVC.Models;
+using GreenThumb.Data;
 
 namespace GreenThumb.WebMVC
 {

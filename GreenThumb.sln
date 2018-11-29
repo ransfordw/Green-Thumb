@@ -5,6 +5,16 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenThumb.WebMVC", "GreenThumb.WebMVC\GreenThumb.WebMVC.csproj", "{6D5A2908-EA92-4B54-83AB-C1147A9643DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenThumb.Data", "GreenThumb.Data\GreenThumb.Data.csproj", "{DB76270B-08E7-4D4D-89E3-70FEBB2BDF22}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenThumb.Contracts", "GreenThumb.Contracts\GreenThumb.Contracts.csproj", "{9A927108-283F-4FD5-8D53-448AAC72313A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenThumb.Services", "GreenThumb.Services\GreenThumb.Services.csproj", "{699630CF-FA48-4708-BA4D-43ED4B98BFDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenThumb.Models", "GreenThumb.Models\GreenThumb.Models.csproj", "{C5CC416A-D389-46D3-9471-82045826CA1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenThumb.Tests", "GreenThumb.Tests\GreenThumb.Tests.csproj", "{6890454F-8EBB-4DA2-9F1A-6B89AD835465}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{6D5A2908-EA92-4B54-83AB-C1147A9643DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D5A2908-EA92-4B54-83AB-C1147A9643DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6D5A2908-EA92-4B54-83AB-C1147A9643DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB76270B-08E7-4D4D-89E3-70FEBB2BDF22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB76270B-08E7-4D4D-89E3-70FEBB2BDF22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB76270B-08E7-4D4D-89E3-70FEBB2BDF22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB76270B-08E7-4D4D-89E3-70FEBB2BDF22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A927108-283F-4FD5-8D53-448AAC72313A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A927108-283F-4FD5-8D53-448AAC72313A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A927108-283F-4FD5-8D53-448AAC72313A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A927108-283F-4FD5-8D53-448AAC72313A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{699630CF-FA48-4708-BA4D-43ED4B98BFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699630CF-FA48-4708-BA4D-43ED4B98BFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699630CF-FA48-4708-BA4D-43ED4B98BFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699630CF-FA48-4708-BA4D-43ED4B98BFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5CC416A-D389-46D3-9471-82045826CA1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5CC416A-D389-46D3-9471-82045826CA1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5CC416A-D389-46D3-9471-82045826CA1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5CC416A-D389-46D3-9471-82045826CA1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6890454F-8EBB-4DA2-9F1A-6B89AD835465}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6890454F-8EBB-4DA2-9F1A-6B89AD835465}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6890454F-8EBB-4DA2-9F1A-6B89AD835465}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6890454F-8EBB-4DA2-9F1A-6B89AD835465}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
