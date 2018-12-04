@@ -20,8 +20,8 @@ namespace GreenThumb.Data
         public PlantType TypeOfPlant { get; set; }
         public SoilType SoilMix { get; set; }
         public WaterRate WateringFrequency { get; set; }
-        public DateTimeOffset TimeWatered { get; set; }
-        public DateTimeOffset TimeFertilized { get; set; }
+        public DateTimeOffset? TimeWatered { get; set; }
+        public DateTimeOffset? TimeFertilized { get; set; }
         public DateTimeOffset NextWatering { get; set; }
         public List<string> Colors { get; set; }
 
