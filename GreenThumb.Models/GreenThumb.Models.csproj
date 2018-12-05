@@ -54,7 +54,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PlantCreate.cs" />
+    <Compile Include="Plant\PlantCreate.cs" />
+    <Compile Include="Plant\PlantDetails.cs" />
+    <Compile Include="Plant\PlantEdit.cs" />
+    <Compile Include="Plant\PlantListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -67,5 +70,6 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GreenThumb.Models
+namespace GreenThumb.Models.Plant
 {
     public class PlantCreate
     {

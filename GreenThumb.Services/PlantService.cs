@@ -1,10 +1,8 @@
 ﻿using GreenThumb.Data;
-using GreenThumb.Models;
+using GreenThumb.Models.Plant;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace GreenThumb.Services
 {
@@ -36,14 +34,95 @@ namespace GreenThumb.Services
             }
         }
 
-        public DateTimeOffset CalculateNextWatering(WaterRate waterRate, DateTimeOffset timeLastWatered)
+        public IEnumerable<PlantListItem> GetPlants()
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var query =
+                    ctx
+                       .Plants
+                       .Where(e => e.OwnerID == _userId)
+                       .Select(
+                        e =>
+                        new PlantListItem
+                        {
+                            PlantID = e.PlantID,
+                            TypeOfPlant = e.TypeOfPlant,
+                            SoilMix = e.SoilMix,
+                            WateringFrequency = e.WateringFrequency,
+                            TimeWatered = e.TimeWatered,
+                            TimeFertilized = e.TimeFertilized,
+                            NextWatering = e.NextWatering,
+                        });
+                return query.ToArray();
+            }
+        }
+
+        public PlantDetails GetPlantById(int id)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                      ctx
+                         .Plants
+                         .Single(e => e.PlantID == id && e.OwnerID == _userId);
+                return
+                    new PlantDetails
+                    {
+                        PlantID = entity.PlantID,
+                        TypeOfPlant = entity.TypeOfPlant,
+                        SoilMix = entity.SoilMix,
+                        WateringFrequency = entity.WateringFrequency,
+                        TimeWatered = entity.TimeWatered,
+                        TimeFertilized = entity.TimeFertilized,
+                        NextWatering = entity.NextWatering,
+                    };
+            }
+        }
+
+        public bool UpdatePlant(PlantEdit model)
+        {
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                    ctx
+                    .Plants
+                    .Single(e => e.OwnerID == _userId && e.PlantID == model.PlantID);
+                entity.PlantID = model.PlantID;
+                entity.TypeOfPlant = model.TypeOfPlant;
+                entity.SoilMix = model.SoilMix;
+                entity.WateringFrequency = model.WateringFrequency;
+                entity.TimeWatered = model.TimeWatered;
+                entity.TimeFertilized = model.TimeFertilized;
+                entity.NextWatering = model.NextWatering;
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        public bool DeletePlant(int id)
+        {
+
+            using (var ctx = new ApplicationDbContext())
+            {
+                var entity =
+                       ctx
+                            .Plants
+                            .Single(e => e.PlantID == id && e.OwnerID == _userId);
+                ctx.Plants.Remove(entity);
+
+                return ctx.SaveChanges() == 1;
+            }
+        }
+
+        private DateTimeOffset CalculateNextWatering(WaterRate waterRate, DateTimeOffset timeLastWatered)
         {
             DateTimeOffset time = DateTimeOffset.Now;
             if (timeLastWatered == null)
             {
                 time = timeLastWatered;
             }
-            
+
             switch (waterRate)
             {
                 case WaterRate.Daily:
