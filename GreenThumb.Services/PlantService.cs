@@ -117,28 +117,29 @@ namespace GreenThumb.Services
 
         private DateTimeOffset CalculateNextWatering(WaterRate waterRate, DateTimeOffset timeLastWatered)
         {
-            DateTimeOffset time = DateTimeOffset.Now;
+            DateTimeOffset newTime;
+
             if (timeLastWatered == null)
-            {
-                time = timeLastWatered;
-            }
+                newTime = DateTimeOffset.Now;
+            else
+                newTime = timeLastWatered;
 
             switch (waterRate)
             {
                 case WaterRate.Daily:
-                    time.AddDays(1);
+                    newTime = timeLastWatered.AddDays(1);
                     break;
                 case WaterRate.Weekly:
-                    time.AddDays(7);
+                    newTime = timeLastWatered.AddDays(7);
                     break;
                 case WaterRate.Biweekly:
-                    time.AddDays(14);
+                    newTime = timeLastWatered.AddDays(14);
                     break;
                 case WaterRate.Monthly:
-                    time.AddMonths(1);
+                    newTime = timeLastWatered.AddMonths(1);
                     break;
             }
-            return time;
+            return newTime;
         }
     }
 }

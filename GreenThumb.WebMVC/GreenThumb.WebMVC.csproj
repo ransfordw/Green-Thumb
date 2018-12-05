@@ -256,6 +256,7 @@
     <Content Include="Views\Plant\Details.cshtml" />
     <Content Include="Views\Plant\Edit.cshtml" />
     <Content Include="Views\Plant\Delete.cshtml" />
+    <Content Include="Views\Shared\DisplayTemplates\DateTimeOffset.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

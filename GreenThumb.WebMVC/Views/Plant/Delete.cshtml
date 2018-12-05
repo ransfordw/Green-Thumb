@@ -20,6 +20,28 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.SoilMix)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.SoilMix)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TypeOfPlant)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TypeOfPlant)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WateringFrequency)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WateringFrequency)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.TimeWatered)
         </dt>
 
@@ -44,6 +66,7 @@
         </dd>
 
     </dl>
+</div>
 
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()

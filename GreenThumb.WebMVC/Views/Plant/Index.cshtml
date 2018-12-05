@@ -12,16 +12,25 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.PlantID)
+           Plant #
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TimeWatered)
+            Plant Type
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.TimeFertilized)
+           Soil Type
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.NextWatering)
+            Watering Rate
+        </th>
+        <th>
+            Time Last Watered
+        </th>
+        <th>
+           Time Last Fertilized
+        </th>
+        <th>
+            Needs Watered 
         </th>
         <th></th>
     </tr>
@@ -30,6 +39,15 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.PlantID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TypeOfPlant)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SoilMix)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WateringFrequency)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.TimeWatered)
@@ -41,9 +59,9 @@
             @Html.DisplayFor(modelItem => item.NextWatering)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+            @Html.ActionLink("Edit", "Edit", new { id=item.PlantID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.PlantID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.PlantID })
         </td>
     </tr>
 }
