@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GreenThumb.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,11 @@ namespace GreenThumb.Models
 {
     public class PlantCreate
     {
-
+        public PlantType TypeOfPlant { get; set; }
+        public SoilType SoilMix { get; set; }
+        public WaterRate WateringFrequency { get; set; }
+        public DateTimeOffset TimeWatered { get; set; }
+        public DateTimeOffset TimeFertilized { get; set; }
+        public DateTimeOffset NextWatering { get; set; }
     }
 }
