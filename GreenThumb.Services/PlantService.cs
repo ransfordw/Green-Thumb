@@ -52,7 +52,7 @@ namespace GreenThumb.Services
                             WateringFrequency = e.WateringFrequency,
                             TimeWatered = e.TimeWatered,
                             TimeFertilized = e.TimeFertilized,
-                            NextWatering = e.NextWatering,
+                            NextWatering = CalculateNextWatering(e.WateringFrequency, e.TimeWatered),
                         });
                 return query.ToArray();
             }
@@ -94,7 +94,7 @@ namespace GreenThumb.Services
                 entity.WateringFrequency = model.WateringFrequency;
                 entity.TimeWatered = model.TimeWatered;
                 entity.TimeFertilized = model.TimeFertilized;
-                entity.NextWatering = model.NextWatering;
+                entity.NextWatering = CalculateNextWatering(model.WateringFrequency, model.TimeWatered);
 
                 return ctx.SaveChanges() == 1;
             }
