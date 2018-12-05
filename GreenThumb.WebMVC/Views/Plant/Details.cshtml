@@ -1,0 +1,50 @@
+﻿@model GreenThumb.Models.Plant.PlantDetails
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>PlantDetails</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PlantID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PlantID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeWatered)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeWatered)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TimeFertilized)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TimeFertilized)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.NextWatering)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.NextWatering)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

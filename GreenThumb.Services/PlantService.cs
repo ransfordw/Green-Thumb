@@ -52,7 +52,7 @@ namespace GreenThumb.Services
                             WateringFrequency = e.WateringFrequency,
                             TimeWatered = e.TimeWatered,
                             TimeFertilized = e.TimeFertilized,
-                            NextWatering = CalculateNextWatering(e.WateringFrequency, e.TimeWatered),
+                            NextWatering = e.NextWatering,
                         });
                 return query.ToArray();
             }

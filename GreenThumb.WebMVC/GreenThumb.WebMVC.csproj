@@ -251,10 +251,14 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Plant\Create.cshtml" />
+    <Content Include="Views\Plant\Index.cshtml" />
+    <Content Include="Views\Plant\Details.cshtml" />
+    <Content Include="Views\Plant\Edit.cshtml" />
+    <Content Include="Views\Plant\Delete.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Plant\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -273,6 +277,14 @@
     <ProjectReference Include="..\GreenThumb.Data\GreenThumb.Data.csproj">
       <Project>{DB76270B-08E7-4D4D-89E3-70FEBB2BDF22}</Project>
       <Name>GreenThumb.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GreenThumb.Models\GreenThumb.Models.csproj">
+      <Project>{C5CC416A-D389-46D3-9471-82045826CA1B}</Project>
+      <Name>GreenThumb.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GreenThumb.Services\GreenThumb.Services.csproj">
+      <Project>{699630CF-FA48-4708-BA4D-43ED4B98BFDA}</Project>
+      <Name>GreenThumb.Services</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
