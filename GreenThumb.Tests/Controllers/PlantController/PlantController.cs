@@ -1,14 +1,15 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace GreenThumb.Tests
+namespace GreenThumb.Tests.Controllers.PlantController
 {
     [TestClass]
-    public class UnitTest1
+    public class PlantController
     {
         [TestMethod]
         public void TestMethod1()
         {
+
         }
     }
 }
