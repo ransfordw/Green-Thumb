@@ -15,7 +15,7 @@ namespace GreenThumb.Data
     {
         [Key]
         public int PlantID { get; set; }
-
+        [Required]
         public Guid OwnerID { get; set; }
         public PlantType TypeOfPlant { get; set; }
         public SoilType SoilMix { get; set; }

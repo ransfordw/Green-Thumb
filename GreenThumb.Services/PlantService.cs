@@ -1,5 +1,5 @@
 ﻿using GreenThumb.Data;
-using GreenThumb.Models.Plant;
+using GreenThumb.Models.PlantModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
