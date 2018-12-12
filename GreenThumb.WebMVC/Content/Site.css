@@ -1,14 +1,23 @@
-﻿body {
+﻿:root {
+    --font-one: 'Special Elite', cursive;
+    --green: rgb(202,193,183);
+    --bluegreen: #90AACB;
+}
+
+body {
     padding-top: 50px;
     padding-bottom: 20px;
+    font-family: var(--font-one);
+    background: linear-gradient(var(--green), var(--bluegreen));
+    background: url(https://media.mnn.com/assets/images/2017/12/smartplant.jpg.653x0_q80_crop-smart.jpg) center;
 }
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
 }
-
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
 */
@@ -21,4 +30,15 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+.homeJumbotron{
+    background: transparent;
+}
+
+.myTable {
+    background: rgb(140,100, 45);
+    opacity: 0.8;
+    color: coral;
 }

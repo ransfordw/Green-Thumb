@@ -16,5 +16,7 @@ namespace GreenThumb.Models.PlantModels
         public DateTimeOffset TimeWatered { get; set; }
         public DateTimeOffset TimeFertilized { get; set; }
         public DateTimeOffset NextWatering { get; set; }
+
+        public override string ToString() => $"Your plant type is {TypeOfPlant}";
     }
 }

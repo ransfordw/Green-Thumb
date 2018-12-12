@@ -76,6 +76,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Material.cs" />
+    <Compile Include="Migrations\201812052229337_InitialCreate.cs" />
+    <Compile Include="Migrations\201812052229337_InitialCreate.Designer.cs">
+      <DependentUpon>201812052229337_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812111455481_changedStuff.cs" />
+    <Compile Include="Migrations\201812111455481_changedStuff.Designer.cs">
+      <DependentUpon>201812111455481_changedStuff.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Plant.cs" />
     <Compile Include="IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -83,6 +92,14 @@
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201812052229337_InitialCreate.resx">
+      <DependentUpon>201812052229337_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812111455481_changedStuff.resx">
+      <DependentUpon>201812111455481_changedStuff.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

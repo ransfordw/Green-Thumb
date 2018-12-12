@@ -1,4 +1,4 @@
-﻿@model IEnumerable<GreenThumb.Models.Plant.PlantListItem>
+﻿@model IEnumerable<GreenThumb.Models.PlantModels.PlantListItem>
 
 @{
     ViewBag.Title = "Index";
@@ -9,7 +9,7 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
-<table class="table">
+<table class="table myTable">
     <tr>
         <th>
            Plant #
@@ -63,6 +63,7 @@
             @Html.ActionLink("Details", "Details", new { id = item.PlantID }) |
             @Html.ActionLink("Delete", "Delete", new { id = item.PlantID })
         </td>
+        <td></td>
     </tr>
 }
 
