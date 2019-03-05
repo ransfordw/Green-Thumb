@@ -84,6 +84,14 @@
     <Compile Include="Migrations\201812111455481_changedStuff.Designer.cs">
       <DependentUpon>201812111455481_changedStuff.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201903052202518_addedAgeToUser.cs" />
+    <Compile Include="Migrations\201903052202518_addedAgeToUser.Designer.cs">
+      <DependentUpon>201903052202518_addedAgeToUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201903052203316_addedAgeAndNameToUser.cs" />
+    <Compile Include="Migrations\201903052203316_addedAgeAndNameToUser.Designer.cs">
+      <DependentUpon>201903052203316_addedAgeAndNameToUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Plant.cs" />
     <Compile Include="IdentityModels.cs" />
@@ -99,6 +107,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812111455481_changedStuff.resx">
       <DependentUpon>201812111455481_changedStuff.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903052202518_addedAgeToUser.resx">
+      <DependentUpon>201903052202518_addedAgeToUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201903052203316_addedAgeAndNameToUser.resx">
+      <DependentUpon>201903052203316_addedAgeAndNameToUser.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
