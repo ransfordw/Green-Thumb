@@ -58,10 +58,10 @@
     <Compile Include="MaterialModels\MaterialDetails.cs" />
     <Compile Include="MaterialModels\MaterialEdit.cs" />
     <Compile Include="MaterialModels\MaterialListItem.cs" />
-    <Compile Include="PlantModels\PlantCreate.cs" />
-    <Compile Include="PlantModels\PlantDetails.cs" />
-    <Compile Include="PlantModels\PlantEdit.cs" />
-    <Compile Include="PlantModels\PlantListItem.cs" />
+    <Compile Include="Plant\PlantCreate.cs" />
+    <Compile Include="Plant\PlantDetails.cs" />
+    <Compile Include="Plant\PlantEdit.cs" />
+    <Compile Include="Plant\PlantListItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

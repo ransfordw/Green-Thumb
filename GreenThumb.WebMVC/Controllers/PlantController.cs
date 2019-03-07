@@ -1,5 +1,5 @@
 ﻿using GreenThumb.Data;
-using GreenThumb.Models.PlantModels;
+using GreenThumb.Models.Plant;
 using GreenThumb.Services;
 using Microsoft.AspNet.Identity;
 using System;

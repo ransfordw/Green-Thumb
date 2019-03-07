@@ -1,22 +1,22 @@
 ﻿using GreenThumb.Data;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GreenThumb.Models.PlantModels
+namespace GreenThumb.Models.Plant
 {
-    public class PlantEdit
+    public class PlantListItem
     {
         public int PlantID { get; set; }
         public PlantType TypeOfPlant { get; set; }
         public SoilType SoilMix { get; set; }
         public WaterRate WateringFrequency { get; set; }
-        [DataType(DataType.Date)]
         public DateTimeOffset TimeWatered { get; set; }
-        [DataType(DataType.Date)]
         public DateTimeOffset TimeFertilized { get; set; }
+        public DateTimeOffset NextWatering { get; set; }
+
+        public override string ToString() => $"Your plant type is {TypeOfPlant}";
     }
 }
