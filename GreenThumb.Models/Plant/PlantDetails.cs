@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GreenThumb.Models.PlantModels
+namespace GreenThumb.Models.Plant
 {
-    public class PlantListItem
+    public class PlantDetails
     {
         public int PlantID { get; set; }
         public PlantType TypeOfPlant { get; set; }
@@ -16,7 +16,5 @@ namespace GreenThumb.Models.PlantModels
         public DateTimeOffset TimeWatered { get; set; }
         public DateTimeOffset TimeFertilized { get; set; }
         public DateTimeOffset NextWatering { get; set; }
-
-        public override string ToString() => $"Your plant type is {TypeOfPlant}";
     }
 }
